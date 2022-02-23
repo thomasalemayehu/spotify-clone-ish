@@ -1,12 +1,16 @@
-import "./App.css";
+// Import Libraries
 import SpotifyWebApi from "spotify-web-api-js";
 import React, { useEffect } from "react";
-import { getAccessTokenFromUri } from "./spotify";
+
+// Import Components
 import Login from "./Login";
 import Player from "./Player";
 
-// Global State Provider
-import { useStateProviderValue } from "./StateProvider";
+// Import Helpers
+import { useStateProviderValue } from "../helpers/StateProvider";
+import { getAccessTokenFromUri } from "../helpers/spotify";
+// Import Styles
+import "../assets/css/App.css";
 
 // Spotify Wrapper Init
 const spotifyApp = new SpotifyWebApi();

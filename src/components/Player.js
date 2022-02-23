@@ -1,9 +1,12 @@
+// Import Libraries
 import React from "react";
-import "./Player.css";
-
+// Import Components
 import Sidebar from "./Sidebar";
 import Body from "./Body";
 import Footer from "./Footer";
+// Import Helpers
+// Import Styles
+import "../assets/css/Player.css";
 
 function Player() {
   return (

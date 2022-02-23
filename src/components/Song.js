@@ -1,5 +1,10 @@
+// Import Libraries
 import React from "react";
-import "./Song.css";
+// Import Components
+// Import Helpers
+// Import Styles
+
+import "../assets/css/Song.css";
 
 function Song({ track }) {
   return (

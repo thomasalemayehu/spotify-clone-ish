@@ -1,7 +1,10 @@
+// Import Libraries
 import React from "react";
-import "./DiscoverBanner.css";
 
-import { useStateProviderValue } from "./StateProvider";
+// Import Helpers
+import { useStateProviderValue } from "../helpers/StateProvider";
+// Import Styles
+import "../assets/css/DiscoverBanner.css";
 
 function DiscoverBanner() {
   const [{ discoverWeekly }, dispatch] = useStateProviderValue();

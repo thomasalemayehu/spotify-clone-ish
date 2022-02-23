@@ -1,14 +1,15 @@
+// Import Libraries
 import React from "react";
-import "./HomeSongs.css";
-
+// Import Components
+import Song from "./Song";
+// Import Helpers
+import { useStateProviderValue } from "../helpers/StateProvider";
+// Import Styles
+import "../assets/css/HomeSongs.css";
 import PlayCircleFilledWhiteRoundedIcon from "@mui/icons-material/PlayCircleFilledWhiteRounded";
 import FavoriteBorderRoundedIcon from "@mui/icons-material/FavoriteBorderRounded";
 import MoreHorizRoundedIcon from "@mui/icons-material/MoreHorizRounded";
 import TimelapseRoundedIcon from "@mui/icons-material/TimelapseRounded";
-
-import { useStateProviderValue } from "./StateProvider";
-
-import Song from "./Song";
 
 function HomeSongs() {
   const [{ discoverWeekly, discoverWeeklyLoaded }, dispatch] =

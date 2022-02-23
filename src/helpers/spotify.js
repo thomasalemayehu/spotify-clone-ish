@@ -21,13 +21,3 @@ export const getAccessTokenFromUri = () => {
 export const loginUrl = `${authenticationEndPoint}client_id=${clientId}&redirect_uri=${redirectUri}&scope=${appScopes.join(
   "%20"
 )}&response_type=token&show_dialog=true`;
-
-export const setAccessToken = (accessToken) => {
-  sessionStorage.setItem("accessToken", accessToken);
-};
-
-export const getAccessToken = () => {
-  return sessionStorage.getItem("accessToken")
-    ? sessionStorage.getItem("accessToken")
-    : null;
-};

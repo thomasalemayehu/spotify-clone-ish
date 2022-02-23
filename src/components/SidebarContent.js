@@ -1,5 +1,8 @@
+// Import Libraries
 import React from "react";
-import "./SidebarContent.css";
+
+// Import Styles
+import "../assets/css/SidebarContent.css";
 
 function SidebarContent({ name, Icon }) {
   return (

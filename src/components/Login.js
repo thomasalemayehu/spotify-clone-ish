@@ -1,6 +1,10 @@
+// Import Libraries
 import React from "react";
-import "./Login.css";
-import { loginUrl } from "./spotify";
+// Import Components
+// Import Helpers
+import { loginUrl } from "../helpers/spotify";
+// Import Styles
+import "../assets/css/Login.css";
 
 function Login() {
   return (

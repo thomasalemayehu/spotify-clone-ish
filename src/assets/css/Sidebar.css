@@ -43,13 +43,12 @@
 }
 
 .sidebar-install-app {
-  height: 6%;
+  padding-top: 6px;
+  height: 5%;
   color: grey;
   display: flex;
   align-items: center;
-
   padding-left: 10px;
-
   font-size: 14px;
   transition: color 250ms ease-in;
   -webkit-transition: color 250ms ease-in;

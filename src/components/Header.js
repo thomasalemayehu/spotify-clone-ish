@@ -1,9 +1,12 @@
+// Import Libraries
 import React from "react";
-import "./Header.css";
+// Import Components
+// Import Helpers
+import { useStateProviderValue } from "../helpers/StateProvider";
+// Import Styles
+import "../assets/css/Header.css";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import { Avatar } from "@mui/material";
-// Global State Provider
-import { useStateProviderValue } from "./StateProvider";
 
 function Header() {
   const [{ currentUser }, dispatch] = useStateProviderValue();

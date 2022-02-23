@@ -1,8 +1,10 @@
+// Import Libraries
 import React from "react";
-import "./Footer.css";
-
-import logo from "./res/usher.jpg";
-
+// Import Components
+// Import Helpers
+// Import Styles
+import "../assets/css/Footer.css";
+import logo from "../assets/usher.jpg";
 import ShuffleRoundedIcon from "@mui/icons-material/ShuffleRounded";
 import SkipNextRoundedIcon from "@mui/icons-material/SkipNextRounded";
 import SkipPreviousRoundedIcon from "@mui/icons-material/SkipPreviousRounded";
