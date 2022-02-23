@@ -1,0 +1,25 @@
+.song-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+.song-title-container {
+  min-width: 140px;
+  width: 200px;
+  background-color: red;
+  display: flex;
+  align-items: flex-end;
+}
+.song-title-icon {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+.song-title {
+  font-size: 16px;
+}
+.song-artist {
+  font-size: 12px;
+}

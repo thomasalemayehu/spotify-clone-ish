@@ -1,0 +1,67 @@
+.home-songs-main-container {
+  margin-top: 10%;
+}
+.home-songs-header-container {
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  max-width: 260px;
+}
+.home-songs-main-container .home-songs-header-icon:nth-of-type(1) {
+  color: #1db954;
+  transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  -moz-transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -o-transform: scale(2.2);
+}
+.home-songs-main-container .home-songs-header-icon:nth-of-type(1):hover {
+  transform: scale(2.3);
+  -webkit-transform: scale(2.3);
+  -moz-transform: scale(2.3);
+  -ms-transform: scale(2.3);
+  -o-transform: scale(2.3);
+}
+
+.home-songs-main-container .home-songs-header-icon:nth-of-type(2) {
+  transform: scale(1.8);
+  color: grey;
+  -webkit-transform: scale(1.8);
+  -moz-transform: scale(1.8);
+  -ms-transform: scale(1.8);
+  -o-transform: scale(1.8);
+}
+
+.home-songs-main-container .home-songs-header-icon:nth-of-type(3) {
+  transition: color 200ms ease-in;
+  transform: scale(1.6);
+  color: grey;
+  -webkit-transform: scale(1.6);
+  -moz-transform: scale(1.6);
+  -ms-transform: scale(1.6);
+  -o-transform: scale(1.6);
+  -webkit-transition: color 200ms ease-in;
+  -moz-transition: color 200ms ease-in;
+  -ms-transition: color 200ms ease-in;
+  -o-transition: color 200ms ease-in;
+}
+
+.home-songs-main-container .home-songs-header-icon:nth-of-type(3):hover {
+  color: white;
+}
+
+.home-songs-container {
+  margin-top: 8%;
+}
+
+.home-songs-title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: grey;
+}
+.home-songs-container > hr {
+  border: 1px solid #282828;
+  width: 100%;
+  margin: 12px auto;
+}

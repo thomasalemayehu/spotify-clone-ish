@@ -1,0 +1,42 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: red;
+}
+
+.header-left-container {
+  flex: 0.5;
+  min-width: 200px;
+  background-color: white;
+  color: grey;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  overflow-x: hidden;
+  padding: 10px;
+}
+.header-left-container input {
+  border: none;
+  width: fit-content;
+}
+
+.header-left-container input:focus {
+  border: none;
+  width: 100%;
+}
+
+/* right Side */
+.header-right-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-right-container > h4 {
+  margin-left: 12px;
+}

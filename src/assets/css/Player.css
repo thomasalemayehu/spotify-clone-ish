@@ -1,0 +1,11 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.player-body-container {
+  display: flex;
+  width: 100%;
+  /* height: calc(100vh - 70px); */
+  background-color: black;
+  color: white;
+}

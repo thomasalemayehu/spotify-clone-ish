@@ -1,0 +1,68 @@
+.sidebar-container {
+  padding-top: 2%;
+  flex: 0.2;
+  height: calc(100vh - 65px);
+  background-color: #04040404;
+  min-width: 230px;
+}
+
+.sidebar-container > svg {
+  width: 65%;
+  margin: 0 17.5% 8% 17.5%;
+}
+
+.sidebar-title {
+  text-transform: uppercase;
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.sidebar-container > hr {
+  border: 1px solid #282828;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.playlists-container {
+  overflow-y: auto;
+
+  max-height: 40.5%;
+}
+
+.playlists-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.playlists-container::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+.playlists-container::-webkit-scrollbar-thumb {
+  background-color: grey;
+}
+
+.sidebar-install-app {
+  height: 6%;
+  color: grey;
+  display: flex;
+  align-items: center;
+
+  padding-left: 10px;
+
+  font-size: 14px;
+  transition: color 250ms ease-in;
+  -webkit-transition: color 250ms ease-in;
+  -moz-transition: color 250ms ease-in;
+  -ms-transition: color 250ms ease-in;
+  -o-transition: color 250ms ease-in;
+}
+
+.sidebar-download-icon {
+  margin-right: 8px;
+}
+
+.sidebar-install-app:hover {
+  color: white;
+  cursor: pointer;
+}
