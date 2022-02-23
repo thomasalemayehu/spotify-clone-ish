@@ -12,7 +12,7 @@ import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import DownloadForOfflineRoundedIcon from "@mui/icons-material/DownloadForOfflineRounded";
 
 function Sidebar() {
-  const [{ currentUserPlaylists }, dispatch] = useStateProviderValue();
+  const [{ currentUserPlaylists }] = useStateProviderValue();
   return (
     <div className="sidebar-container">
       <svg viewBox="0 0 1134 340" className="spotify-logo--text">

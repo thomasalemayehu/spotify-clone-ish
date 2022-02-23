@@ -1,7 +1,7 @@
 .footer-container {
   position: fixed;
   bottom: 0;
-  height: 70x;
+  height: 70px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -29,6 +29,8 @@
 
 .music-info-container h4 {
   margin-bottom: 5px;
+  overflow: auto;
+  width: 25ch;
 }
 .music-info-container p {
   font-size: 12px;

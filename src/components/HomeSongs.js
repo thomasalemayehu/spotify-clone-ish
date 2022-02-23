@@ -11,9 +11,10 @@ import FavoriteBorderRoundedIcon from "@mui/icons-material/FavoriteBorderRounded
 import MoreHorizRoundedIcon from "@mui/icons-material/MoreHorizRounded";
 import TimelapseRoundedIcon from "@mui/icons-material/TimelapseRounded";
 
+import Song from "./Song";
+
 function HomeSongs() {
-  const [{ discoverWeekly, discoverWeeklyLoaded }, dispatch] =
-    useStateProviderValue();
+  const [{ discoverWeekly }, dispatch] = useStateProviderValue();
 
   // console.log("Here", discoverWeeklyLoaded);
   return (
@@ -34,13 +35,13 @@ function HomeSongs() {
         </div>
         <hr />
         <div className="home-songs">
-          {/* {discoverWeekly?.tracks.items.map((item) => {
-            // <Song track={item.track} key={item.track.name} />;
-            <div> Item </div>;
-          })} */}
-          {/* {discoverWeekly?.tracks.items?.map((item) => {
-            <Song track={item.added_at} />;
-          })} */}
+          {discoverWeekly?.items?.map((playlist) => (
+            <Song
+              title={playlist.name}
+              image={playlist.images[0].url}
+              key={playlist.name + "," + Math.random()}
+            />
+          ))}
         </div>
       </div>
     </div>

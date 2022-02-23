@@ -1,15 +1,17 @@
-import { getAccessToken } from "./spotify";
-
 export const initialState = {
+  spotifyApp: null,
   currentUser: null,
   accessToken: null,
-  currentUserPlaylists: [],
+  currentUserPlaylists: null,
   discoverWeekly: null,
   discoverWeeklyLoaded: false,
+  currentUserRecentPlayed: null,
+  currentUserSavedTracks: null,
+  currentUserPlaying: null,
 };
 
 const reducer = (state, action) => {
-  // console.log("Debug Print", action);
+  console.log("Debug Print", action);
 
   switch (action.type) {
     case "SET_USER":
@@ -36,6 +38,21 @@ const reducer = (state, action) => {
       return {
         ...state,
         discoverWeekly: action.discoverWeekly,
+      };
+    case "SET_USER_RECENT":
+      return {
+        ...state,
+        currentUserRecentPlayed: action.currentUserRecent,
+      };
+    case "SET_USER_SAVED_TRACKS":
+      return {
+        ...state,
+        currentUserSavedTracks: action.currentUserSavedTracks,
+      };
+    case "SET_USER_CURRENT_PLAYING":
+      return {
+        ...state,
+        currentUserPlaying: action.currentUserPlaying,
       };
     default:
       return state;

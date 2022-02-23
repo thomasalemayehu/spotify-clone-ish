@@ -37,6 +37,7 @@ function App() {
       // Set Access Token to Spotify Wrapper
       spotifyApp.setAccessToken(_accessToken);
 
+      // Get Profile Info
       spotifyApp.getMe().then((user) => {
         dispatch({
           type: "SET_USER",
@@ -44,23 +45,44 @@ function App() {
         });
       });
 
+      // Get all user playlists
       spotifyApp.getUserPlaylists().then((playlists) => {
-        console.log(playlists);
         dispatch({
           type: "SET_PLAYLISTS",
           currentUserPlaylists: playlists,
         });
       });
 
-      spotifyApp.getPlaylist("37i9dQZEVXcNtRwnkrxpjR").then((playlist) => {
-        console.log("App.js");
+      // spotifyApp.getPlaylist("37i9dQZEVXcNtRwnkrxpjR").then((playlist) => {
+      //   dispatch({
+      //     type: "SET_DISCOVER_WEEKLY",
+      //     discoverWeekly: playlist,
+      //   });
+      // });
+
+      // get recently played
+      spotifyApp.getMyRecentlyPlayedTracks().then((tracks) => {
         dispatch({
-          type: "SET_DISCOVER_WEEKLY",
-          discoverWeekly: playlist,
+          type: "SET_USER_RECENT",
+          currentUserRecent: tracks,
+        });
+      });
+
+      spotifyApp.getMySavedTracks().then((tracks) => {
+        dispatch({
+          type: "SET_USER_SAVED_TRACKS",
+          currentUserSavedTracks: tracks,
+        });
+      });
+
+      spotifyApp.getMyCurrentPlayingTrack().then((track) => {
+        dispatch({
+          type: "SET_USER_CURRENT_PLAYING",
+          currentUserPlaying: track,
         });
       });
     }
-  }, []);
+  });
 
   return <div className="app">{accessToken ? <Player /> : <Login />}</div>;
 }

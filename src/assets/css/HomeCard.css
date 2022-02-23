@@ -1,0 +1,61 @@
+.home-card-item {
+  position: relative;
+  min-width: 260px;
+  max-width: 260px;
+  min-height: 300px;
+  max-height: 300px;
+  background-color: #282828;
+  margin-right: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.home-card-item-image {
+  width: 220px !important;
+  height: 210px !important;
+  object-fit: contain;
+}
+
+.home-card-item h4 {
+  margin-top: 12px;
+  max-width: 42ch;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.home-card-item span {
+  margin-top: 12px;
+  max-width: 42ch;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.home-card-item-icon {
+  background-color: #282828;
+  position: absolute;
+  color: #1db954;
+  top: 67%;
+  right: 12%;
+  transform: scale(2);
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
+  display: none !important;
+}
+
+.home-card-item:hover .home-card-item-icon {
+  display: inline !important;
+}
+
+.home-card-item h4::-webkit-scrollbar,
+.home-card-item span::-webkit-scrollbar {
+  display: none;
+}
+.home-card-item {
+  scrollbar-width: none;
+}

@@ -1,36 +1,36 @@
-// Import Libraries
-import React from "react";
-// Import Components
-// Import Helpers
-// Import Styles
+// // Import Libraries
+// import React from "react";
+// // Import Components
+// // Import Helpers
+// // Import Styles
 
-import "../assets/css/Song.css";
+// import "../assets/css/Song.css";
 
-function Song({ track }) {
-  return (
-    <div>{track}</div>
-    // <div className="song-container">
-    //   <div>#1</div>
-    //   <div className="song-title-container">
-    //     <img
-    //       src={track.album.images[0]?.url}
-    //       alt={track.album.name}
-    //       className="song-title-icon"
-    //     />
-    //     <div className="song-info-container">
-    //       <h4 className="song-title">{track.name}</h4>
-    //       <p className="song-artist">
-    //         {track.artists.map((artist) => artist.name).join(", ")}
-    //       </p>
-    //     </div>
-    //   </div>
-    //   <div>{track.album.name}</div>
-    // {
-    /* <div>Date Added</div> */
-    // }
-    // <div>3:00</div>
-    // </div>
-  );
-}
+// function Song({ track }) {
+//   return (
+//     <div>{track}</div>
+//     // <div className="song-container">
+//     //   <div>#1</div>
+//     //   <div className="song-title-container">
+//     //     <img
+//     //       src={track.album.images[0]?.url}
+//     //       alt={track.album.name}
+//     //       className="song-title-icon"
+//     //     />
+//     //     <div className="song-info-container">
+//     //       <h4 className="song-title">{track.name}</h4>
+//     //       <p className="song-artist">
+//     //         {track.artists.map((artist) => artist.name).join(", ")}
+//     //       </p>
+//     //     </div>
+//     //   </div>
+//     //   <div>{track.album.name}</div>
+//     // {
+//     /* <div>Date Added</div> */
+//     // }
+//     // <div>3:00</div>
+//     // </div>
+//   );
+// }
 
-export default Song;
+// export default Song;

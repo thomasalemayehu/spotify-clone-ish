@@ -14,7 +14,6 @@ import ArrowDropDownRoundedIcon from "@mui/icons-material/ArrowDropDownRounded";
 
 function Header() {
   const [{ currentUser }, dispatch] = useStateProviderValue();
-  console.log(currentUser);
   return (
     <div className="header-container">
       <div className="header-left-container">

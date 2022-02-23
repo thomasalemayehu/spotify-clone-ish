@@ -1,0 +1,58 @@
+.home-header-card-container {
+  transition: color 400ms ease-in;
+  background-color: #282828;
+  max-width: 340px;
+  min-width: 340px;
+  max-height: 90px;
+  min-height: 90px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 6px 40px #222121;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: color 400ms ease-in;
+  -moz-transition: color 400ms ease-in;
+  -ms-transition: color 400ms ease-in;
+  -o-transition: color 400ms ease-in;
+}
+.home-header-card-image {
+  height: 90px;
+  width: 90px;
+  object-fit: contain;
+  margin-right: 20px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.home-header-card-title {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.125px;
+}
+.home-header-card-icon {
+  color: #1db954;
+  display: none;
+  margin-left: auto;
+  margin-right: 32px;
+  transform: scale(2);
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
+  display: none !important;
+}
+
+.home-header-card-container:hover {
+  background-color: #4e4e4e;
+}
+.home-header-card-container:hover .home-header-card-icon {
+  display: inline !important;
+  transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  -moz-transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -o-transform: scale(2.2);
+}

@@ -13,6 +13,8 @@ const appScopes = [
   "user-top-read",
   "user-modify-playback-state",
   "playlist-read-private",
+  "user-library-read",
+  "user-modify-playback-state",
 ];
 
 export const getAccessTokenFromUri = () => {
