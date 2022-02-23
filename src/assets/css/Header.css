@@ -6,7 +6,7 @@
   background-color: red;
 }
 
-.header-left-container {
+/* .header-left-container {
   flex: 0.5;
   min-width: 200px;
   background-color: white;
@@ -31,7 +31,7 @@
   width: 100%;
 }
 
-/* right Side */
+
 .header-right-container {
   display: flex;
   align-items: center;
@@ -39,4 +39,4 @@
 
 .header-right-container > h4 {
   margin-left: 12px;
-}
+} */

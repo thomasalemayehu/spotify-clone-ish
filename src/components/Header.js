@@ -13,15 +13,15 @@ function Header() {
   return (
     <div className="header-container">
       <div className="header-left-container">
-        <SearchRoundedIcon />
-        <input placeholder="Search for Artists, Songs, Podcasts" type="text" />
+        {/* <SearchRoundedIcon /> */}
+        {/* <input placeholder="Search for Artists, Songs, Podcasts" type="text" /> */}
       </div>
       <div className="header-right-container">
-        <Avatar
+        {/* <Avatar
           src={currentUser?.images[0]?.url}
           alt={currentUser?.display_name}
-        />
-        <h4>{currentUser?.display_name}</h4>
+        /> */}
+        {/* <h4>{currentUser?.display_name}</h4> */}
       </div>
     </div>
   );
