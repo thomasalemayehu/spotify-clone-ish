@@ -20,23 +20,6 @@ import { useStateProviderValue } from "../helpers/StateProvider";
 
 function Footer() {
   const [{ currentUserPlaying, accessToken }] = useStateProviderValue();
-  async function pausePlayback() {
-    // const spotifyApp = new SpotifyWebApi();
-    // spotifyApp.setAccessToken(accessToken);
-    // // spotifyApp.pause();
-    // // spotifyApp.skipToNext();
-    // spotifyApp.setShuffle(true).then(()=>{console.log("Done")})
-    const response = await fetch("https://api.spotify.com/v1/me/player/next", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + accessToken,
-      },
-      state: "track",
-    });
-
-    console.log(response);
-  }
 
   // var progressTime = currentUserPlaying?.progress_ms;
   // var durationTime = currentUserPlaying?.item.duration_ms;
@@ -44,11 +27,11 @@ function Footer() {
   return (
     <div className="footer-container">
       <div className="footer-left-container">
-        <img
-          src={currentUserPlaying?.item.album.images[0].url}
+        {/* <img
+          src={currentUserPlaying?.item?.album?.images[0].url}
           alt=""
           className="footer-album-logo"
-        />
+        /> */}
         <div className="music-info-container">
           <h4>{currentUserPlaying?.item.name}</h4>
           <p>
@@ -66,10 +49,7 @@ function Footer() {
       <div className="footer-center-container">
         <ShuffleRoundedIcon className="footer-icon footer-green" />
         <SkipPreviousRoundedIcon className="footer-icon" />
-        <PlayCircleFilledRoundedIcon
-          className="footer-icon footer-icon-large"
-          onClick={pausePlayback}
-        />
+        <PlayCircleFilledRoundedIcon className="footer-icon footer-icon-large" />
         <SkipNextRoundedIcon className="footer-icon" />
         <RepeatRoundedIcon className="footer-icon" />
       </div>
